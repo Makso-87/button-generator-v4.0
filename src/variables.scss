@@ -1,0 +1,11 @@
+$dark-text-main: #1c1c1c;
+
+@mixin header_2 {
+  color: $dark-text-main;
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}

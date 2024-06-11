@@ -1,0 +1,49 @@
+@import '../../variables';
+
+.Layout {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    color: $dark-text-main;
+    margin: 0 0 40px;
+  }
+
+  .MainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    .LeftSide {
+      width: 50%;
+
+      h2 {
+        text-align: center;
+        @include header_2;
+      }
+    }
+
+    .RightSide {
+      width: 50%;
+
+      .PreviewContainer {
+        h2 {
+          text-align: center;
+          @include header_2;
+        }
+      }
+
+      .ResultCodeContainer {
+        h2 {
+          text-align: center;
+          @include header_2;
+        }
+      }
+    }
+  }
+}
