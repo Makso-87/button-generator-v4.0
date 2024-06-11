@@ -1,8 +1,8 @@
-import React from "react";
-export const App = () => {
-  return (
-    <div>
-      <h1>Привет, мир!</h1>
-    </div>
-  );
+import React from 'react';
+import Layout from './components/Layout/Layout';
+
+const App = () => {
+  return <Layout />;
 };
+
+export default App;

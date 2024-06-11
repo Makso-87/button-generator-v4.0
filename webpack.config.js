@@ -7,6 +7,28 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                namedExport: false,
+                exportLocalsConvention: 'as-is',
+                localIdentName: '[folder]_[local]__[hash:base64:5]',
+              },
+              importLoaders: 1,
+            },
+          },
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.tsx?$/,
         use: [
           {
@@ -17,26 +39,6 @@ module.exports = {
           },
         ],
         exclude: /node_modules/,
-      },
-      {
-        test: /\.(sc|c)ss$/i,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 1,
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
       },
     ],
   },
@@ -51,7 +53,7 @@ module.exports = {
     port: 1008,
     hot: true,
   },
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
