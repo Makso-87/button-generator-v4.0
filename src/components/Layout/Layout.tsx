@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Layout.module.scss';
+import SettingsBlock from '../SettingsBlock/SettingsBlock';
 
 const Layout = () => {
   return (
@@ -9,6 +10,8 @@ const Layout = () => {
       <div className={classes.MainContainer}>
         <div className={classes.LeftSide}>
           <h2>Настройки параметров кнопки</h2>
+
+          <SettingsBlock />
         </div>
 
         <div className={classes.RightSide}>
