@@ -1,0 +1,13 @@
+.Panel {
+  display: flex;
+  flex-direction: column;
+
+  .TabBar {
+    display: flex;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+}

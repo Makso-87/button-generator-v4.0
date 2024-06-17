@@ -1,0 +1,18 @@
+@import '../../../variables';
+
+.ColorInput {
+  display: flex;
+
+  .Name {
+    color: $dark-text-main;
+    display: inline-block;
+  }
+
+  .Range {
+    margin: 0 10px;
+  }
+
+  .Field {
+    width: 150px;
+  }
+}
