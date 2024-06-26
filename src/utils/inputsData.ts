@@ -29,6 +29,7 @@ export const tabs = [
         type: 'color',
         defaultValue: '#4058ce',
         tabName: 'general',
+        units: '',
       },
       {
         name: 'buttonWidth',
@@ -36,6 +37,7 @@ export const tabs = [
         type: 'range',
         defaultValue: 100,
         tabName: 'general',
+        units: 'px',
       },
       {
         name: 'buttonHeight',
@@ -43,6 +45,7 @@ export const tabs = [
         type: 'range',
         defaultValue: 40,
         tabName: 'general',
+        units: 'px',
       },
       {
         name: 'buttonBorderRadius',
@@ -50,6 +53,7 @@ export const tabs = [
         type: 'range',
         defaultValue: 5,
         tabName: 'general',
+        units: 'px',
         switchable: true,
       },
     ],
