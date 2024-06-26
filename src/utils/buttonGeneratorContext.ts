@@ -1,8 +1,12 @@
 import { createContext } from 'react';
 import { TContextProviderMethod } from '../components/ContextProvider/ContextProvider';
 
+export type TCSSPropertiesData = { value: string | number; units: string };
+
+export type TCSSPropertiesTuple = [string, TCSSPropertiesData];
+
 export type TContext = {
-  values: Record<string, string | number>;
+  values: Record<string, TCSSPropertiesData>;
   methods: Record<string, TContextProviderMethod>;
 };
 
