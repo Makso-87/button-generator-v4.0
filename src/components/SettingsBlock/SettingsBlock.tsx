@@ -32,7 +32,7 @@ const getInput = (data: TInput, type: string) => {
     label,
     tabName,
     onChange,
-    value: values[name],
+    value: values[name].value,
     switchable,
   };
 
